@@ -20,19 +20,19 @@ Contains 171,907 games and 161 columns on those games dating back to 1871.
 3. On average, a team that makes the playoffs will win 94 games, have an On Base Percentage of 0.341, a Slugging Percentage of    0.434, and a Batting Average of 0.269 
 
 # Modeling
-Used a Dummy Classifier, Logistic regression, a Decision Tree Classifier, Random Forest,  XGBoost, and Gridsearch CV to choose the best model to predict the outcome of a single game.
+Used a Dummy Classifier, Logistic regression, a Decision Tree Classifier, Random Forest,  XGBoost, and Gridsearch CV to choose the best model to predict the outcome of a single game and if a team will make the playoffs.
 
-Used Linear Regression to predict total team wins for a season.
+Used Linear Regression to predict total team wins.
 
 ### Model Results 
 
-Dummy Classifier - 0.5 Testing Accuracy
-Logistic Regression - 0.96 Testing Accuracy
-Decision Tree Classifier - 0.85 Testing Accuracy
-Random Forest Classifier - 0.90 Testing Accuracy
-XGBoost - 0.95 Testing accuracy 
+Dummy Classifier - 0.53 Testing Accuracy
+Logistic Regression - 0.56 Testing Accuracy
+Random Forest Classifier - 0.54 Testing Accuracy
+XGBoost - 0.55 Testing accuracy 
 
-Linear Regression - 0.80 Testing Accuracy
+Linear Regression Wins - 3.9 RMSE
+Linear Regression Playoffs - 0.81 Testing Accuracy 
 
 # Analysis of Features 
 
@@ -41,8 +41,13 @@ Linear Regression - 0.80 Testing Accuracy
 3. Also, stolen bases do very little to improve a teams chance of winning while being caught stealing is one of the leading factors of losing. 
 
 # Future Steps 
-1. Build an effective model that predicts the outcomes of games that haven’t happened yet. 
-2. Further investigate how teams can gain an advantage over their opponents. ex . Types of players to scout and in game strategy.  
+
+1. Use Player and team Statistics
+  
+2. Create features on more recent games rather than the last 30 games (last 5 and 10 games played)
+
+3. Incorporate sportsbook betting odds 
+
 
 ### Presentaion Link
 
